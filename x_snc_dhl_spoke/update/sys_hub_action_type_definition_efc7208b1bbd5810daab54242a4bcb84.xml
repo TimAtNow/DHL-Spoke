@@ -1,0 +1,3307 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Get Tracking Status</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Tracking">71c7e08b1bbd5810daab54242a4bcb5b</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get Delivery Status by Tracking Number</description>
+        <ih_action>true</ih_action>
+        <internal_name>get_status</internal_name>
+        <label_cache>[{"name":"{{action.tracking_number}}","label":"action➛Tracking Number","type":"action","ref":""},{"name":"{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].projecteddeliverydate}}","label":"step➛Post Processing➛projectedDeliveryDate","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].projected_delivery_date}}","label":"step➛Post Processing➛projected_delivery_date","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].delivery_status}}","label":"step➛Post Processing➛delivery_status","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>f689ed071b39581027b5cb741a4bcb1a</latest_snapshot>
+        <master_snapshot>c808e48b1bbd5810daab54242a4bcb42</master_snapshot>
+        <name>Get Status</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:35:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>efc7208b1bbd5810daab54242a4bcb84</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Get Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_efc7208b1bbd5810daab54242a4bcb84</sys_update_name>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:28</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=efc7208b1bbd5810daab54242a4bcb84"/>
+    <sys_variable_value action="delete_multiple" query="document_key=efc7208b1bbd5810daab54242a4bcb84"/>
+    <sys_element_mapping action="delete_multiple" query="id=efc7208b1bbd5810daab54242a4bcb84"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>delivery_status</field>
+        <id>efc7208b1bbd5810daab54242a4bcb84</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:20:02</sys_created_on>
+        <sys_id>9009a1071b39581027b5cb741a4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:20:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</table>
+        <value>{{step[56a4072a-1772-4711-9434-163094f4463c].delivery_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projected_delivery_date</field>
+        <id>efc7208b1bbd5810daab54242a4bcb84</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:49</sys_created_on>
+        <sys_id>ad8251cb1bb5581027b5cb741a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:49</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</table>
+        <value>{{step[56a4072a-1772-4711-9434-163094f4463c].projected_delivery_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>efc7208b1bbd5810daab54242a4bcb84</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:49</sys_created_on>
+        <sys_id>618251cb1bb5581027b5cb741a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:49</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</table>
+        <value>{{step[56a4072a-1772-4711-9434-163094f4463c].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>staus_code</field>
+        <id>efc7208b1bbd5810daab54242a4bcb84</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:47:25</sys_created_on>
+        <sys_id>6bc31d0f1bb5581027b5cb741a4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:47:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>efc7208b1bbd5810daab54242a4bcb84</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:35:58</sys_created_on>
+        <sys_id>d7f7a48b1bbd5810daab54242a4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=efc7208b1bbd5810daab54242a4bcb84^sys_idNOT IN75525d8b1bb5581027b5cb741a4bcb47,79525d8b1bb5581027b5cb741a4bcb68"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</action>
+        <cid>5c7b2957-c58c-4fca-8e6a-e1495eda33c4</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>75525d8b1bb5581027b5cb741a4bcb47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=75525d8b1bb5581027b5cb741a4bcb47"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>39525d8b1bb5581027b5cb741a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>3d525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"DHL-API-Key","value":"RFGXCpSxizn0AC2aj4prmssjt1ZI7Pmo"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>75525d8b1bb5581027b5cb741a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>b1525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>b1525d8b1bb5581027b5cb741a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>https://api-eu.dhl.com/track/shipments</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>fd525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=75525d8b1bb5581027b5cb741a4bcb47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>7d525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>b9525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>f5525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>f9525d8b1bb5581027b5cb741a4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>35525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>31525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"trackingNumber","value":"{{action.tracking_number}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</action>
+        <cid>56a4072a-1772-4711-9434-163094f4463c</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Post Processing</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>79525d8b1bb5581027b5cb741a4bcb68</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:21:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=79525d8b1bb5581027b5cb741a4bcb68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79525d8b1bb5581027b5cb741a4bcb68</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>96525d8b1bb5581027b5cb741a4bcb8b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:21:44</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	outputs.status = "Success";
+  		//response = JSON.parse(inputs.response);
+        response = JSON.parse('{ "shipments": [ { "id": 7777777770, "service": "express", "origin": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "destination": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "status": { "timestamp": "2020-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." }, "estimatedTimeOfDelivery": "2020-08-03T00:00:00Z", "estimatedDeliveryTimeFrame": { "estimatedFrom": "2020-08-03T00:00:00Z", "estimatedThrough": "2020-08-03T22:00:00Z" }, "estimatedTimeOfDeliveryRemark": "By End of Day", "details": { "carrier": { "@type": "Organization", "organizationName": "EXPRESS" }, "product": { "productName": "UNKNOWN - Product unknown" }, "receiver": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "sender": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "proofOfDelivery": { "timestamp": "2018-09-05T16:33:00Z", "signatureUrl": "string", "documentUrl": "https://webpod.dhl.com/webPOD/DHLePODRequest", "signed": { "@type": "Person", "familyName": "Doe", "givenName": "John", "name": "John" } }, "totalNumberOfPieces": 8, "pieceIds": [ "JD014600006281230704", "JD014600002708681600", "JD014600006615052259", "JD014600006615052264", "JD014600006615052265", "JD014600006615052268", "JD014600006615052307", "JD014600002266382340", "JD014600002659593446", "JD014600006101653481", "JD014600006614884499" ], "weight": { "value": 253.5, "unitText": "kg" }, "volume": { "value": 12600 }, "loadingMeters": 1.5, "dimensions": { "width": { "value": 20, "unitText": "cm" }, "height": { "value": 18, "unitText": "cm" }, "length": { "value": 35, "unitText": "cm" } }, "references": { "number": "YZ3892406173", "type": "customer-reference" }, "dgf:routes": [ { "dgf:vesselName": "MAERSK SARAT", "dgf:voyageFlightNumber": "TR TRUCK", "dgf:airportOfDeparture": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:airportOfDestination": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:estimatedDepartureDate": "2017-10-10T09:00:00", "dgf:estimatedArrivalDate": "2017-20-10T09:00:00", "dgf:placeOfAcceptance": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfLoading": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfUnloading": { "dgf:locationName": "GOTHENBURG" }, "dgf:placeOfDelivery": { "dgf:locationName": "GOTHENBURG" } } ] }, "events": [ { "timestamp": "2018-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." } ] } ], "possibleAdditionalShipmentsUrl": [ "/shipments?trackingNumber=7777777770&amp;service=parcel-de", "/shipments?trackingNumber=7777777770&amp;service=parcel-nl" ] }');
+        outputs.projected_delivery_date = response.shipments[0].estimatedTimeOfDelivery;
+  		outputs.delivery_status = response.shipments[0].status.status;
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79525d8b1bb5581027b5cb741a4bcb68</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>d2525d8b1bb5581027b5cb741a4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=79525d8b1bb5581027b5cb741a4bcb68"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>9e525d8b1bb5581027b5cb741a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>92525d8b1bb5581027b5cb741a4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>52525d8b1bb5581027b5cb741a4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>56525d8b1bb5581027b5cb741a4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=79525d8b1bb5581027b5cb741a4bcb68^sys_idNOT IN42525d8b1bb5581027b5cb741a4bcb75,ca525d8b1bb5581027b5cb741a4bcb6c"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>42525d8b1bb5581027b5cb741a4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>ca525d8b1bb5581027b5cb741a4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=79525d8b1bb5581027b5cb741a4bcb68^sys_idNOT IN0c09a1071b39581027b5cb741a4bcbd3,0e525d8b1bb5581027b5cb741a4bcb81"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fad7f04a-1272-4e91-9274-4c91e6a5baac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>delivery_status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:20:01</sys_created_on>
+        <sys_id>0c09a1071b39581027b5cb741a4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:20:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=47e24a38-dff8-4296-aeab-29e10a353dc1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projected_delivery_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>projected_delivery_date</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>0e525d8b1bb5581027b5cb741a4bcb81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:53:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=efc7208b1bbd5810daab54242a4bcb84^sys_idNOT IN9bf7a48b1bbd5810daab54242a4bcbc1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aec8c4ac-2253-4bf2-928f-d2b3a9a07904</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>7777777770</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tracking_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tracking Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</model>
+        <model_id>efc7208b1bbd5810daab54242a4bcb84</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_efc7208b1bbd5810daab54242a4bcb84</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:35:58</sys_created_on>
+        <sys_id>9bf7a48b1bbd5810daab54242a4bcbc1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:42:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=efc7208b1bbd5810daab54242a4bcb84^sys_idNOT IN118251cb1bb5581027b5cb741a4bcb0b,8c09a1071b39581027b5cb741a4bcbe1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=a6eba8c0-df01-4f90-ad38-d2523d7fceda</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projected_delivery_date</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Projected Delivery Date</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</model>
+        <model_id>efc7208b1bbd5810daab54242a4bcb84</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:48</sys_created_on>
+        <sys_id>118251cb1bb5581027b5cb741a4bcb0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:47:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=6cafe642-a68a-4d6f-9893-0b79b7ecd337</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>delivery_status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</model>
+        <model_id>efc7208b1bbd5810daab54242a4bcb84</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:20:02</sys_created_on>
+        <sys_id>8c09a1071b39581027b5cb741a4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:20:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=efc7208b1bbd5810daab54242a4bcb84^sys_idNOT IN75525d8b1bb5581027b5cb741a4bcb47,79525d8b1bb5581027b5cb741a4bcb68"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</action>
+        <cid>5c7b2957-c58c-4fca-8e6a-e1495eda33c4</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>75525d8b1bb5581027b5cb741a4bcb47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=75525d8b1bb5581027b5cb741a4bcb47"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>39525d8b1bb5581027b5cb741a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>3d525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"DHL-API-Key","value":"RFGXCpSxizn0AC2aj4prmssjt1ZI7Pmo"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>75525d8b1bb5581027b5cb741a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>b1525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>b1525d8b1bb5581027b5cb741a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>https://api-eu.dhl.com/track/shipments</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>75525d8b1bb5581027b5cb741a4bcb47</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>fd525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=75525d8b1bb5581027b5cb741a4bcb47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>7d525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>b9525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>f5525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>f9525d8b1bb5581027b5cb741a4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>35525d8b1bb5581027b5cb741a4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>75525d8b1bb5581027b5cb741a4bcb47</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:01</sys_created_on>
+        <sys_id>31525d8b1bb5581027b5cb741a4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"trackingNumber","value":"{{action.tracking_number}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</action>
+        <cid>56a4072a-1772-4711-9434-163094f4463c</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Post Processing</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>79525d8b1bb5581027b5cb741a4bcb68</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:21:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=79525d8b1bb5581027b5cb741a4bcb68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79525d8b1bb5581027b5cb741a4bcb68</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>96525d8b1bb5581027b5cb741a4bcb8b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:21:44</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	outputs.status = "Success";
+  		//response = JSON.parse(inputs.response);
+        response = JSON.parse('{ "shipments": [ { "id": 7777777770, "service": "express", "origin": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "destination": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "status": { "timestamp": "2020-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." }, "estimatedTimeOfDelivery": "2020-08-03T00:00:00Z", "estimatedDeliveryTimeFrame": { "estimatedFrom": "2020-08-03T00:00:00Z", "estimatedThrough": "2020-08-03T22:00:00Z" }, "estimatedTimeOfDeliveryRemark": "By End of Day", "details": { "carrier": { "@type": "Organization", "organizationName": "EXPRESS" }, "product": { "productName": "UNKNOWN - Product unknown" }, "receiver": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "sender": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "proofOfDelivery": { "timestamp": "2018-09-05T16:33:00Z", "signatureUrl": "string", "documentUrl": "https://webpod.dhl.com/webPOD/DHLePODRequest", "signed": { "@type": "Person", "familyName": "Doe", "givenName": "John", "name": "John" } }, "totalNumberOfPieces": 8, "pieceIds": [ "JD014600006281230704", "JD014600002708681600", "JD014600006615052259", "JD014600006615052264", "JD014600006615052265", "JD014600006615052268", "JD014600006615052307", "JD014600002266382340", "JD014600002659593446", "JD014600006101653481", "JD014600006614884499" ], "weight": { "value": 253.5, "unitText": "kg" }, "volume": { "value": 12600 }, "loadingMeters": 1.5, "dimensions": { "width": { "value": 20, "unitText": "cm" }, "height": { "value": 18, "unitText": "cm" }, "length": { "value": 35, "unitText": "cm" } }, "references": { "number": "YZ3892406173", "type": "customer-reference" }, "dgf:routes": [ { "dgf:vesselName": "MAERSK SARAT", "dgf:voyageFlightNumber": "TR TRUCK", "dgf:airportOfDeparture": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:airportOfDestination": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:estimatedDepartureDate": "2017-10-10T09:00:00", "dgf:estimatedArrivalDate": "2017-20-10T09:00:00", "dgf:placeOfAcceptance": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfLoading": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfUnloading": { "dgf:locationName": "GOTHENBURG" }, "dgf:placeOfDelivery": { "dgf:locationName": "GOTHENBURG" } } ] }, "events": [ { "timestamp": "2018-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." } ] } ], "possibleAdditionalShipmentsUrl": [ "/shipments?trackingNumber=7777777770&amp;service=parcel-de", "/shipments?trackingNumber=7777777770&amp;service=parcel-nl" ] }');
+        outputs.projected_delivery_date = response.shipments[0].estimatedTimeOfDelivery;
+  		outputs.delivery_status = response.shipments[0].status.status;
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>79525d8b1bb5581027b5cb741a4bcb68</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>d2525d8b1bb5581027b5cb741a4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=79525d8b1bb5581027b5cb741a4bcb68"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>9e525d8b1bb5581027b5cb741a4bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>92525d8b1bb5581027b5cb741a4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>52525d8b1bb5581027b5cb741a4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>79525d8b1bb5581027b5cb741a4bcb68</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:03</sys_created_on>
+        <sys_id>56525d8b1bb5581027b5cb741a4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:03</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=79525d8b1bb5581027b5cb741a4bcb68^sys_idNOT IN42525d8b1bb5581027b5cb741a4bcb75,ca525d8b1bb5581027b5cb741a4bcb6c"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>42525d8b1bb5581027b5cb741a4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>ca525d8b1bb5581027b5cb741a4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=79525d8b1bb5581027b5cb741a4bcb68^sys_idNOT IN0c09a1071b39581027b5cb741a4bcbd3,0e525d8b1bb5581027b5cb741a4bcb81"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fad7f04a-1272-4e91-9274-4c91e6a5baac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>delivery_status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:20:01</sys_created_on>
+        <sys_id>0c09a1071b39581027b5cb741a4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:20:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=47e24a38-dff8-4296-aeab-29e10a353dc1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projected_delivery_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>projected_delivery_date</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">79525d8b1bb5581027b5cb741a4bcb68</model>
+        <model_id>79525d8b1bb5581027b5cb741a4bcb68</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_79525d8b1bb5581027b5cb741a4bcb68</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:02</sys_created_on>
+        <sys_id>0e525d8b1bb5581027b5cb741a4bcb81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:53:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_efc7208b1bbd5810daab54242a4bcb84^sys_idNOT INd3f7a48b1bbd5810daab54242a4bcbc7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tracking_number</element>
+        <help/>
+        <hint/>
+        <label>Tracking Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_efc7208b1bbd5810daab54242a4bcb84</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:35:58</sys_created_on>
+        <sys_id>d3f7a48b1bbd5810daab54242a4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:35:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84^sys_idNOT IN1d8251cb1bb5581027b5cb741a4bcb0f,4c09a1071b39581027b5cb741a4bcbe6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>projected_delivery_date</element>
+        <help/>
+        <hint/>
+        <label>Projected Delivery Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:48</sys_created_on>
+        <sys_id>1d8251cb1bb5581027b5cb741a4bcb0f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:47:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>delivery_status</element>
+        <help/>
+        <hint/>
+        <label>delivery_status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_efc7208b1bbd5810daab54242a4bcb84</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:20:02</sys_created_on>
+        <sys_id>4c09a1071b39581027b5cb741a4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:20:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=efc7208b1bbd5810daab54242a4bcb84^sys_idNOT IN9c08e48b1bbd5810daab54242a4bcb67"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9c08e48b1bbd5810daab54242a4bcb67","name":"plan"}}</plan>
+        <snapshot>f689ed071b39581027b5cb741a4bcb1a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:36:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c08e48b1bbd5810daab54242a4bcb67</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:31</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation>Get Tracking Status</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Tracking">71c7e08b1bbd5810daab54242a4bcb5b</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get Delivery Status by Tracking Number</description>
+        <internal_name>get_status</internal_name>
+        <label_cache>[{"name":"{{action.tracking_number}}","label":"action➛Tracking Number","type":"action","ref":""},{"name":"{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].status}}","label":"step➛Post Processing➛status","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c]._}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].projecteddeliverydate}}","label":"step➛Post Processing➛projectedDeliveryDate","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].projected_delivery_date}}","label":"step➛Post Processing➛projected_delivery_date","type":"step","ref":""},{"name":"{{step[56a4072a-1772-4711-9434-163094f4463c].delivery_status}}","label":"step➛Post Processing➛delivery_status","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Get Status</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Status">efc7208b1bbd5810daab54242a4bcb84</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:36:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c808e48b1bbd5810daab54242a4bcb42</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c808e48b1bbd5810daab54242a4bcb42"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c808e48b1bbd5810daab54242a4bcb42"/>
+    <sys_element_mapping action="delete_multiple" query="id=c808e48b1bbd5810daab54242a4bcb42"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>delivery_status</field>
+        <id>c808e48b1bbd5810daab54242a4bcb42</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:22:28</sys_created_on>
+        <sys_id>f38921471b39581027b5cb741a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</table>
+        <value>{{step[56a4072a-1772-4711-9434-163094f4463c].delivery_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projected_delivery_date</field>
+        <id>c808e48b1bbd5810daab54242a4bcb42</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:58</sys_created_on>
+        <sys_id>eb8291cb1bb5581027b5cb741a4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</table>
+        <value>{{step[56a4072a-1772-4711-9434-163094f4463c].projected_delivery_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>c808e48b1bbd5810daab54242a4bcb42</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:58</sys_created_on>
+        <sys_id>af8291cb1bb5581027b5cb741a4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</table>
+        <value>{{step[56a4072a-1772-4711-9434-163094f4463c].status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>staus_code</field>
+        <id>c808e48b1bbd5810daab54242a4bcb42</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:55:12</sys_created_on>
+        <sys_id>6995d1cf1bb5581027b5cb741a4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:55:12</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>c808e48b1bbd5810daab54242a4bcb42</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:36:02</sys_created_on>
+        <sys_id>5808e48b1bbd5810daab54242a4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:36:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=c808e48b1bbd5810daab54242a4bcb42^sys_idNOT IN138291cb1bb5581027b5cb741a4bcba3,938291cb1bb5581027b5cb741a4bcb93"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</action>
+        <cid>56a4072a-1772-4711-9434-163094f4463c</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Post Processing</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>138291cb1bb5581027b5cb741a4bcba3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=138291cb1bb5581027b5cb741a4bcba3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>138291cb1bb5581027b5cb741a4bcba3</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>9f8291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	outputs.status = "Success";
+  		//response = JSON.parse(inputs.response);
+        response = JSON.parse('{ "shipments": [ { "id": 7777777770, "service": "express", "origin": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "destination": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "status": { "timestamp": "2020-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." }, "estimatedTimeOfDelivery": "2020-08-03T00:00:00Z", "estimatedDeliveryTimeFrame": { "estimatedFrom": "2020-08-03T00:00:00Z", "estimatedThrough": "2020-08-03T22:00:00Z" }, "estimatedTimeOfDeliveryRemark": "By End of Day", "details": { "carrier": { "@type": "Organization", "organizationName": "EXPRESS" }, "product": { "productName": "UNKNOWN - Product unknown" }, "receiver": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "sender": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "proofOfDelivery": { "timestamp": "2018-09-05T16:33:00Z", "signatureUrl": "string", "documentUrl": "https://webpod.dhl.com/webPOD/DHLePODRequest", "signed": { "@type": "Person", "familyName": "Doe", "givenName": "John", "name": "John" } }, "totalNumberOfPieces": 8, "pieceIds": [ "JD014600006281230704", "JD014600002708681600", "JD014600006615052259", "JD014600006615052264", "JD014600006615052265", "JD014600006615052268", "JD014600006615052307", "JD014600002266382340", "JD014600002659593446", "JD014600006101653481", "JD014600006614884499" ], "weight": { "value": 253.5, "unitText": "kg" }, "volume": { "value": 12600 }, "loadingMeters": 1.5, "dimensions": { "width": { "value": 20, "unitText": "cm" }, "height": { "value": 18, "unitText": "cm" }, "length": { "value": 35, "unitText": "cm" } }, "references": { "number": "YZ3892406173", "type": "customer-reference" }, "dgf:routes": [ { "dgf:vesselName": "MAERSK SARAT", "dgf:voyageFlightNumber": "TR TRUCK", "dgf:airportOfDeparture": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:airportOfDestination": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:estimatedDepartureDate": "2017-10-10T09:00:00", "dgf:estimatedArrivalDate": "2017-20-10T09:00:00", "dgf:placeOfAcceptance": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfLoading": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfUnloading": { "dgf:locationName": "GOTHENBURG" }, "dgf:placeOfDelivery": { "dgf:locationName": "GOTHENBURG" } } ] }, "events": [ { "timestamp": "2018-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." } ] } ], "possibleAdditionalShipmentsUrl": [ "/shipments?trackingNumber=7777777770&amp;service=parcel-de", "/shipments?trackingNumber=7777777770&amp;service=parcel-nl" ] }');
+        outputs.projected_delivery_date = response.shipments[0].estimatedTimeOfDelivery;
+  		outputs.delivery_status = response.shipments[0].status.status;
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>138291cb1bb5581027b5cb741a4bcba3</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>db8291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=138291cb1bb5581027b5cb741a4bcba3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>978291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>1b8291cb1bb5581027b5cb741a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>5b8291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>db8291cb1bb5581027b5cb741a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=138291cb1bb5581027b5cb741a4bcba3^sys_idNOT INd78291cb1bb5581027b5cb741a4bcbac,db8291cb1bb5581027b5cb741a4bcba5"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d78291cb1bb5581027b5cb741a4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>db8291cb1bb5581027b5cb741a4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=138291cb1bb5581027b5cb741a4bcba3^sys_idNOT IN1f8291cb1bb5581027b5cb741a4bcbb9,5389ed071b39581027b5cb741a4bcbdc"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=47e24a38-dff8-4296-aeab-29e10a353dc1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projected_delivery_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>projected_delivery_date</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>1f8291cb1bb5581027b5cb741a4bcbb9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:55:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fad7f04a-1272-4e91-9274-4c91e6a5baac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>delivery_status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:22:26</sys_created_on>
+        <sys_id>5389ed071b39581027b5cb741a4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</action>
+        <cid>5c7b2957-c58c-4fca-8e6a-e1495eda33c4</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>938291cb1bb5581027b5cb741a4bcb93</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=938291cb1bb5581027b5cb741a4bcb93"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>138291cb1bb5581027b5cb741a4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>178291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>5f8291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>https://api-eu.dhl.com/track/shipments</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>9b8291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d38291cb1bb5581027b5cb741a4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d78291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"DHL-API-Key","value":"RFGXCpSxizn0AC2aj4prmssjt1ZI7Pmo"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=938291cb1bb5581027b5cb741a4bcb93"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>df8291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>1f8291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>5b8291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d38291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>978291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>938291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"trackingNumber","value":"{{action.tracking_number}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_hub_action_input action="delete_multiple" query="model=c808e48b1bbd5810daab54242a4bcb42^sys_idNOT INc808e48b1bbd5810daab54242a4bcb43"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aec8c4ac-2253-4bf2-928f-d2b3a9a07904</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>7777777770</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tracking_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tracking Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</model>
+        <model_id>c808e48b1bbd5810daab54242a4bcb42</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c808e48b1bbd5810daab54242a4bcb42</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:36:01</sys_created_on>
+        <sys_id>c808e48b1bbd5810daab54242a4bcb43</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:55:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=c808e48b1bbd5810daab54242a4bcb42^sys_idNOT IN2789ed071b39581027b5cb741a4bcbf6,e78291cb1bb5581027b5cb741a4bcbcd"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=6cafe642-a68a-4d6f-9893-0b79b7ecd337</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>delivery_status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</model>
+        <model_id>c808e48b1bbd5810daab54242a4bcb42</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:22:26</sys_created_on>
+        <sys_id>2789ed071b39581027b5cb741a4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=a6eba8c0-df01-4f90-ad38-d2523d7fceda</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projected_delivery_date</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Projected Delivery Date</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</model>
+        <model_id>c808e48b1bbd5810daab54242a4bcb42</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>e78291cb1bb5581027b5cb741a4bcbcd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:55:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=c808e48b1bbd5810daab54242a4bcb42^sys_idNOT IN138291cb1bb5581027b5cb741a4bcba3,938291cb1bb5581027b5cb741a4bcb93"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</action>
+        <cid>56a4072a-1772-4711-9434-163094f4463c</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Post Processing</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>138291cb1bb5581027b5cb741a4bcba3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=138291cb1bb5581027b5cb741a4bcba3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>138291cb1bb5581027b5cb741a4bcba3</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>9f8291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	outputs.status = "Success";
+  		//response = JSON.parse(inputs.response);
+        response = JSON.parse('{ "shipments": [ { "id": 7777777770, "service": "express", "origin": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "destination": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "status": { "timestamp": "2020-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." }, "estimatedTimeOfDelivery": "2020-08-03T00:00:00Z", "estimatedDeliveryTimeFrame": { "estimatedFrom": "2020-08-03T00:00:00Z", "estimatedThrough": "2020-08-03T22:00:00Z" }, "estimatedTimeOfDeliveryRemark": "By End of Day", "details": { "carrier": { "@type": "Organization", "organizationName": "EXPRESS" }, "product": { "productName": "UNKNOWN - Product unknown" }, "receiver": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "sender": { "@type": "Person", "organizationName": "EXPRESS", "familyName": "Doe", "givenName": "John", "name": "John" }, "proofOfDelivery": { "timestamp": "2018-09-05T16:33:00Z", "signatureUrl": "string", "documentUrl": "https://webpod.dhl.com/webPOD/DHLePODRequest", "signed": { "@type": "Person", "familyName": "Doe", "givenName": "John", "name": "John" } }, "totalNumberOfPieces": 8, "pieceIds": [ "JD014600006281230704", "JD014600002708681600", "JD014600006615052259", "JD014600006615052264", "JD014600006615052265", "JD014600006615052268", "JD014600006615052307", "JD014600002266382340", "JD014600002659593446", "JD014600006101653481", "JD014600006614884499" ], "weight": { "value": 253.5, "unitText": "kg" }, "volume": { "value": 12600 }, "loadingMeters": 1.5, "dimensions": { "width": { "value": 20, "unitText": "cm" }, "height": { "value": 18, "unitText": "cm" }, "length": { "value": 35, "unitText": "cm" } }, "references": { "number": "YZ3892406173", "type": "customer-reference" }, "dgf:routes": [ { "dgf:vesselName": "MAERSK SARAT", "dgf:voyageFlightNumber": "TR TRUCK", "dgf:airportOfDeparture": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:airportOfDestination": { "dgf:locationName": "GOTHENBURG", "dgf:locationCode": "AMS", "countryCode": "NL" }, "dgf:estimatedDepartureDate": "2017-10-10T09:00:00", "dgf:estimatedArrivalDate": "2017-20-10T09:00:00", "dgf:placeOfAcceptance": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfLoading": { "dgf:locationName": "GOTHENBURG" }, "dgf:portOfUnloading": { "dgf:locationName": "GOTHENBURG" }, "dgf:placeOfDelivery": { "dgf:locationName": "GOTHENBURG" } } ] }, "events": [ { "timestamp": "2018-03-02T07:53:47Z", "location": { "address": { "countryCode": "NL", "postalCode": "1043 AG", "addressLocality": "Oderweg 2, AMSTERDAM" } }, "statusCode": "pre-transit", "status": "DELAYED", "description": "JESSICA", "remark": "The shipment is pending completion of customs inspection.", "nextSteps": "The status will be updated following customs inspection." } ] } ], "possibleAdditionalShipmentsUrl": [ "/shipments?trackingNumber=7777777770&amp;service=parcel-de", "/shipments?trackingNumber=7777777770&amp;service=parcel-nl" ] }');
+        outputs.projected_delivery_date = response.shipments[0].estimatedTimeOfDelivery;
+  		outputs.delivery_status = response.shipments[0].status.status;
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>138291cb1bb5581027b5cb741a4bcba3</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>db8291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=138291cb1bb5581027b5cb741a4bcba3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>978291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>1b8291cb1bb5581027b5cb741a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>5b8291cb1bb5581027b5cb741a4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>138291cb1bb5581027b5cb741a4bcba3</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>db8291cb1bb5581027b5cb741a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</table>
+        <value>{{step[5c7b2957-c58c-4fca-8e6a-e1495eda33c4].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=138291cb1bb5581027b5cb741a4bcba3^sys_idNOT INd78291cb1bb5581027b5cb741a4bcbac,db8291cb1bb5581027b5cb741a4bcba5"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d78291cb1bb5581027b5cb741a4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>db8291cb1bb5581027b5cb741a4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=138291cb1bb5581027b5cb741a4bcba3^sys_idNOT IN1f8291cb1bb5581027b5cb741a4bcbb9,5389ed071b39581027b5cb741a4bcbdc"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=47e24a38-dff8-4296-aeab-29e10a353dc1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projected_delivery_date</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>projected_delivery_date</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>1f8291cb1bb5581027b5cb741a4bcbb9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:55:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fad7f04a-1272-4e91-9274-4c91e6a5baac</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>delivery_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>delivery_status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing">138291cb1bb5581027b5cb741a4bcba3</model>
+        <model_id>138291cb1bb5581027b5cb741a4bcba3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_138291cb1bb5581027b5cb741a4bcba3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:22:26</sys_created_on>
+        <sys_id>5389ed071b39581027b5cb741a4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Status">c808e48b1bbd5810daab54242a4bcb42</action>
+        <cid>5c7b2957-c58c-4fca-8e6a-e1495eda33c4</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>938291cb1bb5581027b5cb741a4bcb93</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=938291cb1bb5581027b5cb741a4bcb93"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>138291cb1bb5581027b5cb741a4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>178291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>5f8291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>https://api-eu.dhl.com/track/shipments</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>9b8291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d38291cb1bb5581027b5cb741a4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>938291cb1bb5581027b5cb741a4bcb93</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d78291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"DHL-API-Key","value":"RFGXCpSxizn0AC2aj4prmssjt1ZI7Pmo"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=938291cb1bb5581027b5cb741a4bcb93"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>df8291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>1f8291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>5b8291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>d38291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>978291cb1bb5581027b5cb741a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>938291cb1bb5581027b5cb741a4bcb93</id>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:56</sys_created_on>
+        <sys_id>938291cb1bb5581027b5cb741a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:41:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"trackingNumber","value":"{{action.tracking_number}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c808e48b1bbd5810daab54242a4bcb42^sys_idNOT IN1408e48b1bbd5810daab54242a4bcb49"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tracking_number</element>
+        <help/>
+        <hint/>
+        <label>Tracking Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c808e48b1bbd5810daab54242a4bcb42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-08 17:36:02</sys_created_on>
+        <sys_id>1408e48b1bbd5810daab54242a4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-08 17:36:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42^sys_idNOT INe38291cb1bb5581027b5cb741a4bcbd2,ef89ed071b39581027b5cb741a4bcbfa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>projected_delivery_date</element>
+        <help/>
+        <hint/>
+        <label>Projected Delivery Date</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 20:41:57</sys_created_on>
+        <sys_id>e38291cb1bb5581027b5cb741a4bcbd2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 20:55:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>delivery_status</element>
+        <help/>
+        <hint/>
+        <label>delivery_status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c808e48b1bbd5810daab54242a4bcb42</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>hustle</sys_created_by>
+        <sys_created_on>2020-07-08 22:22:27</sys_created_on>
+        <sys_id>ef89ed071b39581027b5cb741a4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DHL" source="x_snc_dhl_spoke">27972c4b1bbd5810daab54242a4bcb6c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DHL">27972c4b1bbd5810daab54242a4bcb6c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>hustle</sys_updated_by>
+        <sys_updated_on>2020-07-08 22:22:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
